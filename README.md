@@ -65,7 +65,12 @@ https://inspector.appiumpro.com/
 
 # Running tests
 
-You can execute the test suite using the following command:
+1. Connect your Android device to the local machine (with Android Studio).
+
+2. Start local Appium server: 
+``appium --allow-cors``
+
+3. You can execute the test suite using the following command:
 ``node --test-reporter-destination=execution.log --test-reporter=tap  --test test-suite.js``
 
 It will run the test and save the output into (./execution.log) file.
