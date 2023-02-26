@@ -74,9 +74,8 @@ describe('Amazon Android App E2E Test', async () => {
         await driver.pause(1000);
         
         console.log('get the 1st search result');
-        const productSearchResultItems = await driver.$$('//android.view.View[@hint="product-detail"][@clickable="true"]');
         await scrollDown(driver);
-
+        const productSearchResultItems = await driver.$$('//android.view.View[@hint="product-detail"][@clickable="true"]');
         await productSearchResultItems[1].click();
 
         await driver.pause(1000);
@@ -87,21 +86,21 @@ describe('Amazon Android App E2E Test', async () => {
         console.log('The selected product: ' + productTitle);
 
         console.log('find and click the add-to-cart button');
-        var addToCartButton = await driver.$('//*[@resource-id="add-to-cart-button"]');
+        const addToCartButton = await driver.$('//*[@resource-id="add-to-cart-button"]');
         while (!await addToCartButton.isExisting()) {
+            const ProductCartElement = driver.$('//android.view.View[@resource-id="a-page"]');
+            assert.equal(await ProductCartElement.isExisting(), true, 'It is not a product cart screen.');
+            
             console.log('scrolling');
             await scrollDown(driver);
             await driver.pause(1000);
             if (await addToCartButton.isExisting()) {
-                console.log('adding to cart');
-                await addToCartButton.click();
                 break;
             } 
             
-            const ProductCartElement = driver.$('//android.view.View[@resource-id="a-page"]');
-            assert.equal(await ProductCartElement.isExisting(), true);
         }
         if (await addToCartButton.isExisting()) {
+            console.log('adding to cart');
             await addToCartButton.click();
         } 
 
@@ -115,7 +114,7 @@ describe('Amazon Android App E2E Test', async () => {
 
         await driver.pause(1000);
 
-        console.log('open the cart');
+        console.log('open the shopping cart');
         const cartIcon = await driver.$('//*[@resource-id="com.amazon.mShop.android.shopping:id/cart_count"]');
         if (await cartIcon.isExisting()) {
             await cartIcon.click();
@@ -124,7 +123,7 @@ describe('Amazon Android App E2E Test', async () => {
         await driver.pause(1000);
         const shortProductTitle = productTitle.substring(0, 20);
         const titleElement = await driver.$('//*[contains(@text, "' + shortProductTitle + '")]');
-        assert.equal(await titleElement.isExisting(), true, shortProductTitle + ': unable to find the title on the checkout page');
+        assert.equal(await titleElement.isExisting(), true, shortProductTitle + ': unable to find the title on the shopping cart page');
     
     } finally {
         await driver.pause(1000);
