@@ -1,0 +1,491 @@
+TAP version 13
+# Subtest: /Users/macbookpro/Projects/amazon-app-test/test-suite.js
+    # 2023-02-26T19:06:25.446Z INFO webdriver: Initiate new session using the WebDriver protocol
+    # 2023-02-26T19:06:25.540Z INFO webdriver: [POST] http://127.0.0.1:4723/session
+    # 2023-02-26T19:06:25.540Z INFO webdriver: DATA {
+    # capabilities:
+        #     alwaysMatch: {
+        # platformName:
+        # 'appium:automationName':
+        # 'appium:deviceName':
+        # 'appium:appPackage':
+        # 'appium:appActivity':
+        #     },
+        #     firstMatch: [ {} ]
+    # },
+    # desiredCapabilities:
+        #     platformName: 'Android',
+        #     'appium:automationName': 'UiAutomator2',
+        #     'appium:deviceName': 'Android',
+        #     'appium:appPackage': 'com.amazon.mShop.android.shopping',
+        #     'appium:appActivity': 'com.amazon.mShop.home.HomeActivity'
+    # }
+    # }
+    # sign-in button
+    # 2023-02-26T19:06:34.203Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="Already a customer? Sign in"]")
+    # 2023-02-26T19:06:34.204Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element
+    # 2023-02-26T19:06:34.204Z INFO webdriver: DATA { using: 'xpath', value: '//*[@text="Already a customer? Sign in"]' }
+    # 2023-02-26T19:06:37.034Z INFO webdriver: RESULT {
+    # 'element
+    # ELEMENT:
+    # }
+    # 2023-02-26T19:06:37.041Z INFO webdriver: COMMAND elementClick("00000000-0000-1f3f-ffff-ffff00000071")
+    # 2023-02-26T19:06:37.042Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element/00000000-0000-1f3f-ffff-ffff00000071/click
+    # 2023-02-26T19:06:37.112Z INFO webdriver: RESULT null
+    # already a customer - radio-button
+    # 2023-02-26T19:06:37.113Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="Sign in. Already a customer?"]")
+    # 2023-02-26T19:06:37.113Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element
+    # 2023-02-26T19:06:37.114Z INFO webdriver: DATA { using: 'xpath', value: '//*[@text="Sign in. Already a customer?"]' }
+    # 2023-02-26T19:06:37.204Z INFO webdriver: RESULT {
+    # error:
+    # message:
+    # stacktrace:
+        #     '    at AndroidUiautomator2Driver.findElOrEls (/Users/macbookpro/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.js:75:11)\\n' +
+        #     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\\n' +
+        #     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.js:81:16)\\n' +
+        #     '    at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.js:21:14)'
+    # }
+    # 2023-02-26T19:06:37.211Z INFO webdriver: COMMAND findElements("xpath", "//*[@text="Sign in. Already a customer?"]")
+    # 2023-02-26T19:06:37.211Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/elements
+    # 2023-02-26T19:06:37.212Z INFO webdriver: DATA { using: 'xpath', value: '//*[@text="Sign in. Already a customer?"]' }
+    # 2023-02-26T19:06:39.222Z INFO webdriver: RESULT [
+    # {
+        #     'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-1f42-0000-038500000083',
+        #     ELEMENT: '00000000-0000-1f42-0000-038500000083'
+    # },
+    # {
+        #     'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-1f42-0000-038800000083',
+        #     ELEMENT: '00000000-0000-1f42-0000-038800000083'
+    # }
+    # ]
+    # 2023-02-26T19:06:39.228Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="Sign in. Already a customer?"]")
+    # 2023-02-26T19:06:39.229Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element
+    # 2023-02-26T19:06:39.229Z INFO webdriver: DATA { using: 'xpath', value: '//*[@text="Sign in. Already a customer?"]' }
+    # 2023-02-26T19:06:39.360Z INFO webdriver: RESULT {
+    # 'element
+    # ELEMENT:
+    # }
+    # 2023-02-26T19:06:39.366Z INFO webdriver: COMMAND elementClick("00000000-0000-1f42-0000-038500000083")
+    # 2023-02-26T19:06:39.367Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element/00000000-0000-1f42-0000-038500000083/click
+    # 2023-02-26T19:06:39.423Z INFO webdriver: RESULT null
+    # enter email
+    # 2023-02-26T19:06:39.424Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="ap_email_login"]")
+    # 2023-02-26T19:06:39.424Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element
+    # 2023-02-26T19:06:39.424Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="ap_email_login"]' }
+    # 2023-02-26T19:06:39.545Z INFO webdriver: RESULT {
+    # 'element
+    # ELEMENT:
+    # }
+    # 2023-02-26T19:06:39.551Z INFO webdriver: COMMAND elementClear("00000000-0000-1f42-0000-00e000000083")
+    # 2023-02-26T19:06:39.551Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element/00000000-0000-1f42-0000-00e000000083/clear
+    # 2023-02-26T19:06:40.134Z INFO webdriver: RESULT null
+    # 2023-02-26T19:06:40.135Z INFO webdriver: COMMAND elementSendKeys("00000000-0000-1f42-0000-00e000000083", "polishchuk.se@gmail.com")
+    # 2023-02-26T19:06:40.135Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element/00000000-0000-1f42-0000-00e000000083/value
+    # 2023-02-26T19:06:40.135Z INFO webdriver: DATA { text: 'dummy@email.amz' }
+    # 2023-02-26T19:06:40.155Z INFO webdriver: RESULT null
+    # 2023-02-26T19:06:40.155Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="continue"]")
+    # 2023-02-26T19:06:40.156Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element
+    # 2023-02-26T19:06:40.156Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="continue"]' }
+    # 2023-02-26T19:06:40.876Z INFO webdriver: RESULT {
+    # 'element
+    # ELEMENT:
+    # }
+    # 2023-02-26T19:06:40.881Z INFO webdriver: COMMAND elementClick("00000000-0000-1f42-0000-065400000083")
+    # 2023-02-26T19:06:40.881Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element/00000000-0000-1f42-0000-065400000083/click
+    # 2023-02-26T19:06:40.925Z INFO webdriver: RESULT null
+    # enter password
+    # 2023-02-26T19:06:40.925Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="ap_password"]")
+    # 2023-02-26T19:06:40.925Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element
+    # 2023-02-26T19:06:40.925Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="ap_password"]' }
+    # 2023-02-26T19:06:41.098Z INFO webdriver: RESULT {
+    # error:
+    # message:
+    # stacktrace:
+        #     '    at AndroidUiautomator2Driver.findElOrEls (/Users/macbookpro/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.js:75:11)\\n' +
+        #     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\\n' +
+        #     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.js:81:16)\\n' +
+        #     '    at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.js:21:14)'
+    # }
+    # 2023-02-26T19:06:41.101Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="ap_password"]")
+    # 2023-02-26T19:06:41.102Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/elements
+    # 2023-02-26T19:06:41.102Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="ap_password"]' }
+    # 2023-02-26T19:06:42.890Z INFO webdriver: RESULT [
+    # {
+        #     'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-1f42-0000-06a200000083',
+        #     ELEMENT: '00000000-0000-1f42-0000-06a200000083'
+    # }
+    # ]
+    # 2023-02-26T19:06:42.893Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="ap_password"]")
+    # 2023-02-26T19:06:42.893Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element
+    # 2023-02-26T19:06:42.893Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="ap_password"]' }
+    # 2023-02-26T19:06:42.938Z INFO webdriver: RESULT {
+    # 'element
+    # ELEMENT:
+    # }
+    # 2023-02-26T19:06:42.941Z INFO webdriver: COMMAND elementClear("00000000-0000-1f42-0000-06a200000083")
+    # 2023-02-26T19:06:42.942Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element/00000000-0000-1f42-0000-06a200000083/clear
+    # 2023-02-26T19:06:43.424Z INFO webdriver: RESULT null
+    # 2023-02-26T19:06:43.424Z INFO webdriver: COMMAND elementSendKeys("00000000-0000-1f42-0000-06a200000083", "ddsk722-FF")
+    # 2023-02-26T19:06:43.425Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element/00000000-0000-1f42-0000-06a200000083/value
+    # 2023-02-26T19:06:43.425Z INFO webdriver: DATA { text: 'dummy-pass' }
+    # 2023-02-26T19:06:43.443Z INFO webdriver: RESULT null
+    # 2023-02-26T19:06:43.444Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="signInSubmit"]")
+    # 2023-02-26T19:06:43.444Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element
+    # 2023-02-26T19:06:43.444Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="signInSubmit"]' }
+    # 2023-02-26T19:06:44.139Z INFO webdriver: RESULT {
+    # 'element
+    # ELEMENT:
+    # }
+    # 2023-02-26T19:06:44.142Z INFO webdriver: COMMAND elementClick("00000000-0000-1f42-0000-070200000083")
+    # 2023-02-26T19:06:44.143Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element/00000000-0000-1f42-0000-070200000083/click
+    # 2023-02-26T19:06:44.198Z INFO webdriver: RESULT null
+    # click the search bar
+    # 2023-02-26T19:06:47.200Z INFO webdriver: COMMAND findElement("xpath", "(//android.widget.LinearLayout[@content-desc="Search"])[1]/android.widget.LinearLayout/android.widget.TextView")
+    # 2023-02-26T19:06:47.200Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element
+    # 2023-02-26T19:06:47.200Z INFO webdriver: DATA {
+    # using:
+    # value:
+    # }
+    # 2023-02-26T19:06:49.177Z INFO webdriver: RESULT {
+    # 'element
+    # ELEMENT:
+    # }
+    # 2023-02-26T19:06:49.179Z INFO webdriver: COMMAND elementClick("00000000-0000-1f3f-ffff-ffff0000001a")
+    # 2023-02-26T19:06:49.180Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element/00000000-0000-1f3f-ffff-ffff0000001a/click
+    # 2023-02-26T19:06:49.238Z INFO webdriver: RESULT null
+    # type the search in
+    # 2023-02-26T19:06:49.239Z INFO webdriver: COMMAND findElement("xpath", "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.EditText")
+    # 2023-02-26T19:06:49.239Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element
+    # 2023-02-26T19:06:49.239Z INFO webdriver: DATA {
+    # using:
+    # value:
+    # }
+    # 2023-02-26T19:06:49.464Z INFO webdriver: RESULT {
+    # 'element
+    # ELEMENT:
+    # }
+    # 2023-02-26T19:06:49.468Z INFO webdriver: COMMAND elementClear("00000000-0000-1f3f-ffff-ffff000000b1")
+    # 2023-02-26T19:06:49.469Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element/00000000-0000-1f3f-ffff-ffff000000b1/clear
+    # 2023-02-26T19:06:50.307Z INFO webdriver: RESULT null
+    # 2023-02-26T19:06:50.308Z INFO webdriver: COMMAND elementSendKeys("00000000-0000-1f3f-ffff-ffff000000b1", "TV")
+    # 2023-02-26T19:06:50.308Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element/00000000-0000-1f3f-ffff-ffff000000b1/value
+    # 2023-02-26T19:06:50.308Z INFO webdriver: DATA { text: 'TV' }
+    # 2023-02-26T19:06:52.299Z INFO webdriver: RESULT null
+    # press enter
+    # 2023-02-26T19:06:52.300Z INFO webdriver: COMMAND pressKeyCode(66)
+    # 2023-02-26T19:06:52.301Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/appium/device/press_keycode
+    # 2023-02-26T19:06:52.301Z INFO webdriver: DATA { keycode: 66 }
+    # 2023-02-26T19:06:53.013Z INFO webdriver: RESULT null
+    # accept cookies
+    # 2023-02-26T19:06:54.015Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="Accept Cookies"]")
+    # 2023-02-26T19:06:54.016Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element
+    # 2023-02-26T19:06:54.016Z INFO webdriver: DATA { using: 'xpath', value: '//*[@text="Accept Cookies"]' }
+    # 2023-02-26T19:06:55.794Z INFO webdriver: RESULT {
+    # error:
+    # message:
+    # stacktrace:
+        #     '    at AndroidUiautomator2Driver.findElOrEls (/Users/macbookpro/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.js:75:11)\\n' +
+        #     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\\n' +
+        #     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.js:81:16)\\n' +
+        #     '    at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.js:21:14)'
+    # }
+    # 2023-02-26T19:06:55.799Z INFO webdriver: COMMAND findElements("xpath", "//*[@text="Accept Cookies"]")
+    # 2023-02-26T19:06:55.799Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/elements
+    # 2023-02-26T19:06:55.799Z INFO webdriver: DATA { using: 'xpath', value: '//*[@text="Accept Cookies"]' }
+    # 2023-02-26T19:06:57.295Z INFO webdriver: RESULT []
+    # get the 1st search result
+    # 2023-02-26T19:06:58.299Z INFO webdriver: COMMAND findElements("xpath", "//android.view.View[@hint="product-detail"][@clickable="true"]")
+    # 2023-02-26T19:06:58.299Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/elements
+    # 2023-02-26T19:06:58.299Z INFO webdriver: DATA {
+    # using:
+    # value:
+    # }
+    # 2023-02-26T19:06:58.704Z INFO webdriver: RESULT [
+    # {
+        #     'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-1f3f-0000-0cb0000000cb',
+        #     ELEMENT: '00000000-0000-1f3f-0000-0cb0000000cb'
+    # },
+    # {
+        #     'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-1f3f-0000-0cb1000000cb',
+        #     ELEMENT: '00000000-0000-1f3f-0000-0cb1000000cb'
+    # },
+    # {
+        #     'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-1f3f-0000-0cb2000000cb',
+        #     ELEMENT: '00000000-0000-1f3f-0000-0cb2000000cb'
+    # }
+    # ]
+    # 2023-02-26T19:06:58.710Z INFO webdriver: COMMAND getWindowRect()
+    # 2023-02-26T19:06:58.711Z INFO webdriver: [GET] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/window/rect
+    # 2023-02-26T19:06:58.735Z INFO webdriver: RESULT { width: 1080, height: 2176, x: 0, y: 0 }
+    # 2023-02-26T19:06:58.736Z INFO webdriver: COMMAND touchPerform(<object>)
+    # 2023-02-26T19:06:58.736Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/touch/perform
+    # 2023-02-26T19:06:58.736Z INFO webdriver: DATA {
+    # actions:
+        #     { action: 'press', options: [Object] },
+        #     { action: 'wait', options: [Object] },
+        #     { action: 'moveTo', options: [Object] },
+        #     { action: 'release', options: {} }
+    # ]
+    # }
+    # 2023-02-26T19:06:59.677Z INFO webdriver: RESULT null
+    # 2023-02-26T19:06:59.677Z INFO webdriver: COMMAND elementClick("00000000-0000-1f3f-0000-0cb1000000cb")
+    # 2023-02-26T19:06:59.678Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element/00000000-0000-1f3f-0000-0cb1000000cb/click
+    # 2023-02-26T19:07:00.215Z INFO webdriver: RESULT null
+    # 2023-02-26T19:07:01.217Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="title_feature_div"]/android.view.View")
+    # 2023-02-26T19:07:01.218Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element
+    # 2023-02-26T19:07:01.218Z INFO webdriver: DATA {
+    # using:
+    # value:
+    # }
+    # 2023-02-26T19:07:03.084Z INFO webdriver: RESULT {
+    # 'element
+    # ELEMENT:
+    # }
+    # 2023-02-26T19:07:03.088Z INFO webdriver: COMMAND getElementText("00000000-0000-1f3f-0000-2430000000d9")
+    # 2023-02-26T19:07:03.089Z INFO webdriver: [GET] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element/00000000-0000-1f3f-0000-2430000000d9/text
+    # 2023-02-26T19:07:04.158Z INFO webdriver: RESULT ChiQ TV
+    # The selected product: ChiQ TV
+    # find and click the add-to-cart button
+    # 2023-02-26T19:07:04.159Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="add-to-cart-button"]")
+    # 2023-02-26T19:07:04.159Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element
+    # 2023-02-26T19:07:04.159Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="add-to-cart-button"]' }
+    # 2023-02-26T19:07:04.513Z INFO webdriver: RESULT {
+    # error:
+    # message:
+    # stacktrace:
+        #     '    at AndroidUiautomator2Driver.findElOrEls (/Users/macbookpro/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.js:75:11)\\n' +
+        #     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\\n' +
+        #     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.js:81:16)\\n' +
+        #     '    at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.js:21:14)'
+    # }
+    # 2023-02-26T19:07:04.518Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="add-to-cart-button"]")
+    # 2023-02-26T19:07:04.518Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/elements
+    # 2023-02-26T19:07:04.518Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="add-to-cart-button"]' }
+    # 2023-02-26T19:07:05.778Z INFO webdriver: RESULT []
+    # scrolling
+    # 2023-02-26T19:07:05.779Z INFO webdriver: COMMAND getWindowRect()
+    # 2023-02-26T19:07:05.780Z INFO webdriver: [GET] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/window/rect
+    # 2023-02-26T19:07:05.797Z INFO webdriver: RESULT { width: 1080, height: 2176, x: 0, y: 0 }
+    # 2023-02-26T19:07:05.798Z INFO webdriver: COMMAND touchPerform(<object>)
+    # 2023-02-26T19:07:05.798Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/touch/perform
+    # 2023-02-26T19:07:05.798Z INFO webdriver: DATA {
+    # actions:
+        #     { action: 'press', options: [Object] },
+        #     { action: 'wait', options: [Object] },
+        #     { action: 'moveTo', options: [Object] },
+        #     { action: 'release', options: {} }
+    # ]
+    # }
+    # 2023-02-26T19:07:06.769Z INFO webdriver: RESULT null
+    # 2023-02-26T19:07:07.771Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="add-to-cart-button"]")
+    # 2023-02-26T19:07:07.771Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/elements
+    # 2023-02-26T19:07:07.771Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="add-to-cart-button"]' }
+    # 2023-02-26T19:07:10.335Z INFO webdriver: RESULT []
+    # 2023-02-26T19:07:10.337Z INFO webdriver: COMMAND findElement("xpath", "//android.view.View[@resource-id="a-page"]")
+    # 2023-02-26T19:07:10.338Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element
+    # 2023-02-26T19:07:10.338Z INFO webdriver: DATA { using: 'xpath', value: '//android.view.View[@resource-id="a-page"]' }
+    # 2023-02-26T19:07:11.025Z INFO webdriver: RESULT {
+    # 'element
+    # ELEMENT:
+    # }
+    # 2023-02-26T19:07:11.030Z INFO webdriver: COMMAND findElements("xpath", "//android.view.View[@resource-id="a-page"]")
+    # 2023-02-26T19:07:11.030Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/elements
+    # 2023-02-26T19:07:11.030Z INFO webdriver: DATA { using: 'xpath', value: '//android.view.View[@resource-id="a-page"]' }
+    # 2023-02-26T19:07:11.257Z INFO webdriver: RESULT [
+    # {
+        #     'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-1f3f-0000-23cb000000d9',
+        #     ELEMENT: '00000000-0000-1f3f-0000-23cb000000d9'
+    # }
+    # ]
+    # 2023-02-26T19:07:11.261Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="add-to-cart-button"]")
+    # 2023-02-26T19:07:11.262Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/elements
+    # 2023-02-26T19:07:11.262Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="add-to-cart-button"]' }
+    # 2023-02-26T19:07:11.464Z INFO webdriver: RESULT []
+    # scrolling
+    # 2023-02-26T19:07:11.465Z INFO webdriver: COMMAND getWindowRect()
+    # 2023-02-26T19:07:11.466Z INFO webdriver: [GET] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/window/rect
+    # 2023-02-26T19:07:11.481Z INFO webdriver: RESULT { width: 1080, height: 2176, x: 0, y: 0 }
+    # 2023-02-26T19:07:11.482Z INFO webdriver: COMMAND touchPerform(<object>)
+    # 2023-02-26T19:07:11.482Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/touch/perform
+    # 2023-02-26T19:07:11.482Z INFO webdriver: DATA {
+    # actions:
+        #     { action: 'press', options: [Object] },
+        #     { action: 'wait', options: [Object] },
+        #     { action: 'moveTo', options: [Object] },
+        #     { action: 'release', options: {} }
+    # ]
+    # }
+    # 2023-02-26T19:07:12.414Z INFO webdriver: RESULT null
+    # 2023-02-26T19:07:13.414Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="add-to-cart-button"]")
+    # 2023-02-26T19:07:13.414Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/elements
+    # 2023-02-26T19:07:13.414Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="add-to-cart-button"]' }
+    # 2023-02-26T19:07:13.698Z INFO webdriver: RESULT []
+    # 2023-02-26T19:07:13.701Z INFO webdriver: COMMAND findElement("xpath", "//android.view.View[@resource-id="a-page"]")
+    # 2023-02-26T19:07:13.701Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element
+    # 2023-02-26T19:07:13.701Z INFO webdriver: DATA { using: 'xpath', value: '//android.view.View[@resource-id="a-page"]' }
+    # 2023-02-26T19:07:14.422Z INFO webdriver: RESULT {
+    # 'element
+    # ELEMENT:
+    # }
+    # 2023-02-26T19:07:14.426Z INFO webdriver: COMMAND findElements("xpath", "//android.view.View[@resource-id="a-page"]")
+    # 2023-02-26T19:07:14.426Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/elements
+    # 2023-02-26T19:07:14.426Z INFO webdriver: DATA { using: 'xpath', value: '//android.view.View[@resource-id="a-page"]' }
+    # 2023-02-26T19:07:14.680Z INFO webdriver: RESULT [
+    # {
+        #     'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-1f3f-0000-23cb000000d9',
+        #     ELEMENT: '00000000-0000-1f3f-0000-23cb000000d9'
+    # }
+    # ]
+    # 2023-02-26T19:07:14.685Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="add-to-cart-button"]")
+    # 2023-02-26T19:07:14.686Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/elements
+    # 2023-02-26T19:07:14.686Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="add-to-cart-button"]' }
+    # 2023-02-26T19:07:14.937Z INFO webdriver: RESULT []
+    # scrolling
+    # 2023-02-26T19:07:14.940Z INFO webdriver: COMMAND getWindowRect()
+    # 2023-02-26T19:07:14.941Z INFO webdriver: [GET] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/window/rect
+    # 2023-02-26T19:07:14.960Z INFO webdriver: RESULT { width: 1080, height: 2176, x: 0, y: 0 }
+    # 2023-02-26T19:07:14.960Z INFO webdriver: COMMAND touchPerform(<object>)
+    # 2023-02-26T19:07:14.960Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/touch/perform
+    # 2023-02-26T19:07:14.960Z INFO webdriver: DATA {
+    # actions:
+        #     { action: 'press', options: [Object] },
+        #     { action: 'wait', options: [Object] },
+        #     { action: 'moveTo', options: [Object] },
+        #     { action: 'release', options: {} }
+    # ]
+    # }
+    # 2023-02-26T19:07:15.890Z INFO webdriver: RESULT null
+    # 2023-02-26T19:07:16.892Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="add-to-cart-button"]")
+    # 2023-02-26T19:07:16.893Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/elements
+    # 2023-02-26T19:07:16.893Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="add-to-cart-button"]' }
+    # 2023-02-26T19:07:17.145Z INFO webdriver: RESULT [
+    # {
+        #     'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-1f3f-0000-26fb000000d9',
+        #     ELEMENT: '00000000-0000-1f3f-0000-26fb000000d9'
+    # }
+    # ]
+    # adding to cart
+    # 2023-02-26T19:07:17.151Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="add-to-cart-button"]")
+    # 2023-02-26T19:07:17.151Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/elements
+    # 2023-02-26T19:07:17.151Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="add-to-cart-button"]' }
+    # 2023-02-26T19:07:17.390Z INFO webdriver: RESULT [
+    # {
+        #     'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-1f3f-0000-26fb000000d9',
+        #     ELEMENT: '00000000-0000-1f3f-0000-26fb000000d9'
+    # }
+    # ]
+    # 2023-02-26T19:07:17.394Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="add-to-cart-button"]")
+    # 2023-02-26T19:07:17.394Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element
+    # 2023-02-26T19:07:17.394Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="add-to-cart-button"]' }
+    # 2023-02-26T19:07:17.648Z INFO webdriver: RESULT {
+    # 'element
+    # ELEMENT:
+    # }
+    # 2023-02-26T19:07:17.652Z INFO webdriver: COMMAND elementClick("00000000-0000-1f3f-0000-26fb000000d9")
+    # 2023-02-26T19:07:17.653Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element/00000000-0000-1f3f-0000-26fb000000d9/click
+    # 2023-02-26T19:07:17.710Z INFO webdriver: RESULT null
+    # 2023-02-26T19:07:17.711Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="add-to-cart-button"]")
+    # 2023-02-26T19:07:17.711Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/elements
+    # 2023-02-26T19:07:17.711Z INFO webdriver: DATA { using: 'xpath', value: '//*[@resource-id="add-to-cart-button"]' }
+    # 2023-02-26T19:07:17.959Z INFO webdriver: RESULT [
+    # {
+        #     'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-1f3f-0000-26fb000000d9',
+        #     ELEMENT: '00000000-0000-1f3f-0000-26fb000000d9'
+    # }
+    # ]
+    # 2023-02-26T19:07:17.962Z INFO webdriver: COMMAND elementClick("00000000-0000-1f3f-0000-26fb000000d9")
+    # 2023-02-26T19:07:17.962Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element/00000000-0000-1f3f-0000-26fb000000d9/click
+    # 2023-02-26T19:07:18.008Z INFO webdriver: RESULT null
+    # close the dialog with extras
+    # 2023-02-26T19:07:19.010Z INFO webdriver: COMMAND findElement("xpath", "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.app.Dialog/android.widget.TextView[2]")
+    # 2023-02-26T19:07:19.010Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element
+    # 2023-02-26T19:07:19.011Z INFO webdriver: DATA {
+    # using:
+    # value:
+    # }
+    # 2023-02-26T19:07:20.544Z INFO webdriver: RESULT {
+    # 'element
+    # ELEMENT:
+    # }
+    # 2023-02-26T19:07:20.548Z INFO webdriver: COMMAND findElements("xpath", "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.app.Dialog/android.widget.TextView[2]")
+    # 2023-02-26T19:07:20.549Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/elements
+    # 2023-02-26T19:07:20.549Z INFO webdriver: DATA {
+    # using:
+    # value:
+    # }
+    # 2023-02-26T19:07:20.788Z INFO webdriver: RESULT [
+    # {
+        #     'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-1f3f-0000-3df5000000d9',
+        #     ELEMENT: '00000000-0000-1f3f-0000-3df5000000d9'
+    # }
+    # ]
+    # 2023-02-26T19:07:20.792Z INFO webdriver: COMMAND elementClick("00000000-0000-1f3f-0000-3df5000000d9")
+    # 2023-02-26T19:07:20.793Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element/00000000-0000-1f3f-0000-3df5000000d9/click
+    # 2023-02-26T19:07:20.842Z INFO webdriver: RESULT null
+    # open the cart
+    # 2023-02-26T19:07:21.843Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="com.amazon.mShop.android.shopping:id/cart_count"]")
+    # 2023-02-26T19:07:21.844Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element
+    # 2023-02-26T19:07:21.844Z INFO webdriver: DATA {
+    # using:
+    # value:
+    # }
+    # 2023-02-26T19:07:23.747Z INFO webdriver: RESULT {
+    # 'element
+    # ELEMENT:
+    # }
+    # 2023-02-26T19:07:23.752Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="com.amazon.mShop.android.shopping:id/cart_count"]")
+    # 2023-02-26T19:07:23.752Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/elements
+    # 2023-02-26T19:07:23.752Z INFO webdriver: DATA {
+    # using:
+    # value:
+    # }
+    # 2023-02-26T19:07:24.180Z INFO webdriver: RESULT [
+    # {
+        #     'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-1f3f-ffff-ffff0000004a',
+        #     ELEMENT: '00000000-0000-1f3f-ffff-ffff0000004a'
+    # }
+    # ]
+    # 2023-02-26T19:07:24.183Z INFO webdriver: COMMAND elementClick("00000000-0000-1f3f-ffff-ffff0000004a")
+    # 2023-02-26T19:07:24.183Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element/00000000-0000-1f3f-ffff-ffff0000004a/click
+    # 2023-02-26T19:07:24.461Z INFO webdriver: RESULT null
+    # 2023-02-26T19:07:25.463Z INFO webdriver: COMMAND findElement("xpath", "//*[contains(@text, "ChiQ TV")]")
+    # 2023-02-26T19:07:25.463Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/element
+    # 2023-02-26T19:07:25.464Z INFO webdriver: DATA { using: 'xpath', value: '//*[contains(@text, "ChiQ TV")]' }
+    # 2023-02-26T19:07:27.299Z INFO webdriver: RESULT {
+    # 'element
+    # ELEMENT:
+    # }
+    # 2023-02-26T19:07:27.304Z INFO webdriver: COMMAND findElements("xpath", "//*[contains(@text, "ChiQ TV")]")
+    # 2023-02-26T19:07:27.304Z INFO webdriver: [POST] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a/elements
+    # 2023-02-26T19:07:27.304Z INFO webdriver: DATA { using: 'xpath', value: '//*[contains(@text, "ChiQ TV")]' }
+    # 2023-02-26T19:07:28.345Z INFO webdriver: RESULT [
+    # {
+        #     'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-1f3f-0000-428c000000e7',
+        #     ELEMENT: '00000000-0000-1f3f-0000-428c000000e7'
+    # },
+    # {
+        #     'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-1f3f-0000-4641000000e7',
+        #     ELEMENT: '00000000-0000-1f3f-0000-4641000000e7'
+    # }
+    # ]
+    # 2023-02-26T19:07:29.351Z INFO webdriver: COMMAND deleteSession()
+    # 2023-02-26T19:07:29.351Z INFO webdriver: [DELETE] http://127.0.0.1:4723/session/18ade678-e041-4033-b41a-ec5558dd740a
+    # 2023-02-26T19:07:29.649Z INFO webdriver: RESULT null
+    # Subtest: Amazon Android App E2E Test
+    ok 1 - Amazon Android App E2E Test
+      ---
+      duration_ms: 1.731708
+      ...
+    1..1
+ok 1 - /Users/macbookpro/Projects/amazon-app-test/test-suite.js
+  ---
+  duration_ms: 65109.180726
+  ...
+1..1
+# tests 1
+# pass 1
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 65111.030943
